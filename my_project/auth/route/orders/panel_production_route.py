@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import panel_production_controller
-from lab4.app.my_project.auth.domain import PanelProduction
+from my_project.auth.controller import panel_production_controller
+from my_project.auth.domain import PanelProduction
 
 panel_production_bp = Blueprint('panel_productions', __name__, url_prefix='/panel-productions')
 

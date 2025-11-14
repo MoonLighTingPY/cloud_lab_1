@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import energy_sale_controller
-from lab4.app.my_project.auth.domain import EnergySale
+from my_project.auth.controller import energy_sale_controller
+from my_project.auth.domain import EnergySale
 
 energy_sale_bp = Blueprint('energy_sales', __name__, url_prefix='/energy-sales')
 

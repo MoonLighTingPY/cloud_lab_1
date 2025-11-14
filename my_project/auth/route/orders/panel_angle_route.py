@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import panel_angle_controller
-from lab4.app.my_project.auth.domain import PanelAngle
+from my_project.auth.controller import panel_angle_controller
+from my_project.auth.domain import PanelAngle
 
 panel_angle_bp = Blueprint('panel_angles', __name__, url_prefix='/panel-angles')
 

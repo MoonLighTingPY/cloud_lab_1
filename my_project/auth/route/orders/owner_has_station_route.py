@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import owner_has_station_controller
-from lab4.app.my_project.auth.domain import OwnerHasStation
+from my_project.auth.controller import owner_has_station_controller
+from my_project.auth.domain import OwnerHasStation
 
 owner_has_station_bp = Blueprint('owner_has_stations', __name__, url_prefix='/owner-has-stations')
 

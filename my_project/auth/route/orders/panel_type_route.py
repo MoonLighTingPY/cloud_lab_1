@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import panel_type_controller
-from lab4.app.my_project.auth.domain import PanelType
+from my_project.auth.controller import panel_type_controller
+from my_project.auth.domain import PanelType
 
 panel_type_bp = Blueprint('panel_types', __name__, url_prefix='/panel-types')
 

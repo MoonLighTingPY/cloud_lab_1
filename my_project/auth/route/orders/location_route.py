@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import location_controller
-from lab4.app.my_project.auth.domain import Location
+from my_project.auth.controller import location_controller
+from my_project.auth.domain import Location
 
 location_bp = Blueprint('locations', __name__, url_prefix='/locations')
 

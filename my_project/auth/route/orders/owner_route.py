@@ -2,8 +2,8 @@ from http import HTTPStatus
 
 from flask import Blueprint, jsonify, Response, request, make_response
 
-from lab4.app.my_project.auth.controller import owner_controller
-from lab4.app.my_project.auth.domain import Owner
+from my_project.auth.controller import owner_controller
+from my_project.auth.domain import Owner
 
 owner_bp = Blueprint('owners', __name__, url_prefix='/owners')
 
