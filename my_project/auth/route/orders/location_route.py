@@ -159,5 +159,22 @@ def patch_location(location_id: int) -> Response:
 
 @location_bp.delete('/<int:location_id>')
 def delete_location(location_id: int) -> Response:
+    """
+    Delete location by ID
+    ---
+    tags:
+      - Location
+    parameters:
+      - in: path
+        name: location_id
+        type: integer
+        required: true
+        description: Location ID
+    responses:
+      200:
+        description: Location deleted successfully
+      404:
+        description: Location not found
+    """
     location_controller.delete(location_id)
     return make_response("Client deleted", HTTPStatus.OK)
